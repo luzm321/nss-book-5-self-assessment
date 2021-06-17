@@ -1,0 +1,65 @@
+div {
+    display: flex;
+}
+
+h1 {
+    padding: 0.8em 0.8em 0em 0.8em;
+    font-size: 70px;
+    color: rgb(111, 167, 209);
+    margin: 0 0 1em 7em;
+}
+
+.gif {
+    width: 175px;
+    height: 150px;
+    margin-top: 40px;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 16.5em 1em 16.5em;
+}
+
+.field {
+    padding: 0.5em 16.5em 0.5em 16.5em;
+}
+
+.label {
+    margin-bottom: 15px;
+}
+
+.submitLetter {
+    margin: 1em 0 1em 16.5em;
+    background-color: rgb(111, 167, 209);
+    color: black;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    padding: 0.25em;
+}
+
+.submitLetter:hover {
+    color: aliceblue;
+}
+
+.sentLetters {
+    margin-left: 16.5em;
+    /* border: 2px solid black; */
+    background-color: aliceblue;
+    width: 41%;
+}
+
+.letter {
+    padding: 1em;
+}
+
+.topicButton {
+    width: 100px;
+    height: 45px;
+    font: 8px;
+    border-radius: 20px;
+    background-color: rgb(111, 167, 209);
+    color: aliceblue;
+    box-shadow: 0.30rem 0.30rem 0.6rem rgb(61, 57, 57);
+    margin: 0.5em;
+}
