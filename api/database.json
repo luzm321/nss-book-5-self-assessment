@@ -1,10 +1,87 @@
 {
     "pals": [
+        {
+            "id": 1,
+            "name": "Maya Angelou",
+            "email": "maya@angelou.com"
+        },
+        {
+            "id": 2,
+            "name": "Mark Twain",
+            "email": "mark@twain.com"
+        },
+        {
+            "id": 3,
+            "name": "Nicholas Sparks",
+            "email": "nick@sparks.com"
+        },
+        {
+            "id": 4,
+            "name": "Edgar Allan Poe",
+            "email": "eddie@poe.com"
+        },
+        {
+            "id": 5,
+            "name": "Alexandre Dumas",
+            "email": "alex@dumas.com"
+        },
+        {
+            "id": 6,
+            "name": "Cassandra Clare",
+            "email": "cassie@clare.com"
+        },
+        {
+            "id": 7,
+            "name": "Suzanne Collins",
+            "email": "suzy@collins.com"
+        },
+        {
+            "id": 8,
+            "name": "Victoria Aveyard",
+            "email": "vicky@aveyard.com"
+        },
+        {
+            "id": 9,
+            "name": "Ally Carter",
+            "email": "ally@carter.com"
+        },
+        {
+            "id": 10,
+            "name": "Richelle Mead",
+            "email": "rich@mead.com"
+        }
     ],
     "letters": [
+        {
+            "id": 1,
+            "letterBody": "This is a sample letter.",
+            "topicId": 1,
+            "authorId": 1,
+            "recipientId": 2,
+            "dateSent": 1620059468300
+        }
     ],
     "topics": [
+        {
+            "id": 1,
+            "label": "Business"
+        },
+        {
+            "id": 2,
+            "label": "Friendly"
+        },
+        {
+            "id": 3,
+            "label": "Family"
+        },
+        {
+            "id": 4,
+            "label": "Congratulations"
+        },
+        {
+            "id": 5,
+            "label": "Condolences"
+        }
     ],
-    "letterTopics": [
-    ]
+    "letterTopics": []
 }
