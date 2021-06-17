@@ -6,6 +6,10 @@ export const Letters = () => {
     const topics = getTopics();
     const letters = getLetters();
 
+    // let lettersArraySorted = letters.sort((a,b) => {
+    //     return parseInt(a.dateSent.split("-").join("")) - parseInt(b.dateSent.split("-").join(""));
+    // });
+
     let letterHTML = `${letters.map(letter => {
         const authorOfLetter = pals.find(pal => pal.id === parseInt(letter.authorId));
         const topicOfLetter = topics.find(topic => topic.id === parseInt(letter.topicId));
@@ -26,3 +30,4 @@ export const Letters = () => {
 
     return letterHTML;
 };
+
