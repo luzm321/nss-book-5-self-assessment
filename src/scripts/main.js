@@ -1,4 +1,4 @@
-import { fetchPals, fetchTopics, fetchLetters } from "./dataAccess.js";
+import { fetchPals, fetchTopics, fetchLetters, fetchLetterTopics } from "./dataAccess.js";
 import { PenPals } from "./PenPals.js";
 // console.log("Welcome to the main module");
 
@@ -10,6 +10,7 @@ export const render = () => {
     fetchPals()
     .then(fetchTopics)
     .then(fetchLetters)
+    .then(fetchLetterTopics)
     .then(
         () => {
             mainContainer.innerHTML = PenPals();

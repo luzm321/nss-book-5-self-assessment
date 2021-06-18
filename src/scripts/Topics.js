@@ -1,5 +1,12 @@
 import { getTopics } from "./dataAccess.js";
+import { setLetterTopic } from "./PenPals.js";
 
+document.addEventListener("change", (event) => {
+    if (event.target.name === "topic") {
+      const topicId = event.target.value;
+      setLetterTopic(parseInt(topicId));
+    }
+  });
 
 export const Topics = () => {
     const topics = getTopics();

@@ -8,7 +8,7 @@ const applicationState = {
     letterTopics: []
 };
 
-// FETCH CALL REQUESTS:
+// HTTP GET FETCH CALL API REQUESTS, getting data from persistent database:
 
 const API = "http://localhost:8088";
 
@@ -45,6 +45,17 @@ export const fetchLetters = () => {
         );
 };
 
+export const fetchLetterTopics = () => {
+    return fetch(`${API}/letterTopics`)
+        .then(response => response.json())
+        .then(
+            (letterTopicsData) => {
+                // Store the external state in application state
+                applicationState.letterTopics = letterTopicsData
+            }
+        );
+};
+
 //exporting copy of specified object properties of application state:
 
 export const getPals = () => {
@@ -57,6 +68,10 @@ export const getTopics = () => {
 
 export const getLetters = () => {
     return applicationState.letters.map(letter => ({...letter}));
+};
+
+export const getLetterTopics = () => {
+    return applicationState.letterTopics.map(letterTopic => ({...letterTopic}));
 };
 
 //Fetching HTTP POST request API; the POST fetch call will dispatch the stateChanged custom event after the POST operation
@@ -78,3 +93,16 @@ export const sendLetter = (userLetterData) => {
             mainContainer.dispatchEvent(new CustomEvent("stateChanged"));
         });
 };
+
+export const addLetterTopics = (letterTopicData) => {
+    const fetchOptions = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(letterTopicData)
+    }
+
+    return fetch(`${API}/letterTopics`, fetchOptions)
+    .then(response => response.json())
+}

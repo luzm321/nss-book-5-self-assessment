@@ -53,20 +53,25 @@
   ],
   "letters": [
     {
-      "id": 1,
-      "letterBody": "This is a sample letter.",
-      "topicId": 1,
-      "authorId": 1,
-      "recipientId": 2,
-      "dateSent": 1620059468300
+      "authorId": 3,
+      "recipientId": 5,
+      "letterBody": "Hello good day,\n\nIt has been a while since we've written something to each other. Hope all is well.",
+      "dateSent": "6/18/2021",
+      "id": 1
     },
     {
-      "authorId": 3,
-      "recipientId": 6,
-      "letterBody": "Hi, how are you today?",
-      "topicId": 2,
-      "dateSent": "6/17/2021",
+      "authorId": 6,
+      "recipientId": 9,
+      "letterBody": "Hi, my friend! How have you been? I have a synopsis idea I would love to discuss with you and maybe we can collaborate on a new novel together? :)",
+      "dateSent": "6/18/2021",
       "id": 2
+    },
+    {
+      "authorId": 4,
+      "recipientId": 8,
+      "letterBody": "Hey! Congratulations on your best-seller novel this year, what a phenomenal read and accomplishment! On that note, would you be interested in proofreading the manuscript I am\ncurrently composing? Lastly, my deepest condolences and prayers to your late grandfather. Let me know how I can help.",
+      "dateSent": "6/18/2021",
+      "id": 3
     }
   ],
   "topics": [
@@ -91,5 +96,56 @@
       "label": "Condolences"
     }
   ],
-  "letterTopics": []
+  "letterTopics": [
+    {
+      "letterId": 1,
+      "topicId": 2,
+      "id": 1
+    },
+    {
+      "letterId": 1,
+      "topicId": 3,
+      "id": 2
+    },
+    {
+      "letterId": 2,
+      "topicId": 1,
+      "id": 3
+    },
+    {
+      "letterId": 2,
+      "topicId": 2,
+      "id": 4
+    },
+    {
+      "letterId": 2,
+      "topicId": 3,
+      "id": 5
+    },
+    {
+      "letterId": 3,
+      "topicId": 1,
+      "id": 6
+    },
+    {
+      "letterId": 3,
+      "topicId": 2,
+      "id": 7
+    },
+    {
+      "letterId": 3,
+      "topicId": 3,
+      "id": 8
+    },
+    {
+      "letterId": 3,
+      "topicId": 4,
+      "id": 9
+    },
+    {
+      "letterId": 3,
+      "topicId": 5,
+      "id": 10
+    }
+  ]
 }
